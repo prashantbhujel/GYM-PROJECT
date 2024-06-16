@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baki fitness</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* css reset*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('image/pic.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            height: 100vh;
+
+            color: white;
+            font-family: "Roboto Condensed", sans-serif;
+
+
+
+        }
+
+        .left {
+            /* border: 4px solid blue; */
+            display: inline-block;
+            position: absolute;
+            left: 40px;
+            top: 18px;
+            text-align: center;
+            line-height: 19px;
+            /*allows to to increase or decrease the height of the box*/
+            font-size: 26px;
+
+        }
+
+        .left img {
+            width: 87px;
+            filter: invert(100%);
+            /*this will change the background color to with opp eg black-white  w-b*/
+
+
+        }
+
+        .mid {
+            /* border: 4px solid red; */
+            display: block;
+            margin: 20px auto;
+            width: 500px;
+            ;
+        }
+
+        .right {
+            /* border: 4px solid green; */
+            display: inline-block;
+            position: absolute;
+            right: 5px;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+            padding: 4px 14px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 1px 14px;
+        }
+
+        .navbar li a:hover {
+            color: gray;
+            text-decoration: underline;
+
+        }
+
+        .btn {
+            font-family: "Roboto Condensed", sans-serif;
+            margin: 0px 5px;
+            padding: 3px 2px;
+            border: 3px solid gray;
+            background-color: black;
+            color: white;
+            border-radius: 11px;
+            font-size: 16px;
+            cursor: pointer;
+            /*allow you to use different types of cursors*/
+        }
+
+        .btn:hover {
+            background-color: rgb(150, 135, 135);
+        }
+
+        .container {
+            border: 2px solid pink;
+            margin: 68px 14px;
+            padding: 33px 7px;
+            width: 35%;
+            border-radius: 18px;
+            text-align: center;
+        }
+
+        .container button {
+            width: 380px;
+            margin: 4px;
+            background-color: black;
+        }
+
+
+        .formgroup input {
+            text-align: center;
+            display: block;
+            width: 83%;
+            border: 3px solid black;
+            padding: 3px;
+            margin: 7px auto;
+            font-size: 23px;
+            border-radius: 22px;
+            font-family: "Roboto Condensed", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+
+        <div class="left">
+            <img src="image/logo2.jpg" alt="">
+            <div>Baki Fitness</div>
+        </div>
+        <!-- mid box for navigaztion -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+
+
+
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">
+                Call Us Now
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
+        </div>
+        <div class="container">
+            <h1> Join The Best Gym In Butwal Now</h1>
+            <form action="noaction.php">
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your age">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your gender">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your locality">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Email">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Number">
+                </div>
+
+
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+
+    </header>
+</body>
+
+</html>
